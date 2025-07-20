@@ -7,9 +7,9 @@ createSummary();
 createImage();
 
 document.querySelector(".home").addEventListener("click", function () {
-    const content = document.getElementById('#content');
+    const content = document.getElementById('content');
     while(content.firstChild){
-        content.removeChild(element.firstChild);
+        content.removeChild(content.firstChild);
     }
 
     createHeader();
@@ -19,9 +19,9 @@ document.querySelector(".home").addEventListener("click", function () {
 
 
 document.querySelector(".menu").addEventListener("click", function () {
-    const content = document.getElementById('#content');
+    const content = document.getElementById('content');
     while(content.firstChild){
-        content.removeChild(element.firstChild);
+        content.removeChild(content.firstChild);
     }
     createMenuHeader(); 
     createMenu();
