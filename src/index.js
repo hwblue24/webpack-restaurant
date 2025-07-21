@@ -1,6 +1,9 @@
+import './style.css';
 import {createHeader, createSummary, createImage} from "./home.js"
 
 import {createMenuHeader, createMenu, createMenuImage} from "./menu.js"
+
+import {createAboutHeader, createAboutInfo, createAboutImg} from "./about.js"
 
 createHeader();
 createSummary();
@@ -28,3 +31,16 @@ document.querySelector(".menu").addEventListener("click", function () {
     createMenuImage();
 });
 
+
+document.querySelector(".about").addEventListener("click", function () {
+    const content = document.getElementById("content");
+    while(content.firstChild) {
+        content.removeChild(content.firstChild); 
+    }
+
+    createAboutHeader();
+    createAboutInfo (); 
+    createAboutImg (); 
+
+
+});

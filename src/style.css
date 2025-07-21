@@ -1,0 +1,27 @@
+body {
+    height:100vh; 
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: 
+        "tabs"
+        "content";
+}
+
+header {
+    grid-area:tabs;
+    background-color: orange;
+    display:flex;
+    justify-content: center;
+  }
+  
+#content {
+    grid-area: content;
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
