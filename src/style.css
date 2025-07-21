@@ -10,14 +10,12 @@ body {
 
 header {
     grid-area:tabs;
-    background-color: orange;
     display:flex;
     justify-content: center;
   }
   
 #content {
     grid-area: content;
-    background-color: aqua;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
